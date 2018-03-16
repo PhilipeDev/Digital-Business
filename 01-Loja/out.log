@@ -1,0 +1,33 @@
+2018-02-16 09:48:55 WARN  TerminalConsulta:23 - Iniciando a aplicação
+2018-02-16 09:48:55 DEBUG TerminalConsulta:31 - Entrando em condição de repetição
+2018-02-16 09:48:57 INFO  EstoqueBO:19 - Adicionando o produto com.fiap.loja.to.ProdutoTO@76fb509a
+2018-02-16 09:48:57 DEBUG TerminalConsulta:40 - Entrando em condição
+2018-02-16 09:48:57 DEBUG TerminalConsulta:31 - Entrando em condição de repetição
+2018-02-16 09:48:58 TRACE EstoqueBO:24 - Adicionando o produto com.fiap.loja.to.ProdutoTO@300ffa5d
+2018-02-16 09:48:58 DEBUG TerminalConsulta:40 - Entrando em condição
+2018-02-16 09:48:58 DEBUG TerminalConsulta:31 - Entrando em condição de repetição
+2018-02-16 09:49:00 ERROR EstoqueBO:27 - Produto inválido
+2018-02-16 09:49:00 DEBUG TerminalConsulta:48 - 
+2018-02-16 09:49:00 WARN  TerminalConsulta:53 - Fim da aplicação
+2018-02-23 08:09:07 WARN  TerminalConsulta:23 - Iniciando a aplicação
+2018-02-23 08:09:07 DEBUG TerminalConsulta:31 - Entrando em condição de repetição
+2018-02-23 08:09:10 INFO  EstoqueBO:19 - Adicionando o produto com.fiap.loja.to.ProdutoTO@76fb509a
+2018-02-23 08:09:10 DEBUG TerminalConsulta:40 - Entrando em condição
+2018-02-23 08:09:10 DEBUG TerminalConsulta:31 - Entrando em condição de repetição
+2018-02-23 08:09:42 TRACE EstoqueBO:24 - Adicionando o produto com.fiap.loja.to.ProdutoTO@300ffa5d
+2018-02-23 08:09:42 DEBUG TerminalConsulta:40 - Entrando em condição
+2018-02-23 08:09:42 DEBUG TerminalConsulta:31 - Entrando em condição de repetição
+2018-02-23 08:09:47 ERROR EstoqueBO:27 - Produto inválido
+2018-02-23 08:09:47 DEBUG TerminalConsulta:45 - Produto não cadastrado
+2018-02-23 08:09:47 DEBUG TerminalConsulta:31 - Entrando em condição de repetição
+2018-02-23 08:09:49 ERROR EstoqueBO:27 - Produto inválido
+2018-02-23 08:09:49 DEBUG TerminalConsulta:48 - 
+2018-02-23 08:09:49 WARN  TerminalConsulta:53 - Fim da aplicação
+2018-02-23 08:21:45 TRACE TerminalConsulta:23 - Iniciando a aplicação
+2018-02-23 08:21:47 TRACE EstoqueBO:15 - Pesquisando produto de código: 401
+2018-02-23 08:21:47 INFO  EstoqueBO:20 - Adicionando o produto com.fiap.loja.to.ProdutoTO@76fb509a
+2018-02-23 08:21:48 TRACE EstoqueBO:15 - Pesquisando produto de código: 402
+2018-02-23 08:21:48 TRACE EstoqueBO:25 - Adicionando o produto com.fiap.loja.to.ProdutoTO@300ffa5d
+2018-02-23 08:21:48 TRACE EstoqueBO:15 - Pesquisando produto de código: 0
+2018-02-23 08:21:48 INFO  EstoqueBO:28 - Produto inválido
+2018-02-23 08:21:48 DEBUG TerminalConsulta:50 - Fim da aplicação
