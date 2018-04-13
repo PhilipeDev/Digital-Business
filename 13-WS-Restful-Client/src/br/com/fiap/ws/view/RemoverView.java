@@ -1,6 +1,8 @@
-package br.com.fiap.ws.service;
+package br.com.fiap.ws.view;
 
 import java.util.Scanner;
+
+import br.com.fiap.ws.service.MedicoService;
 
 public class RemoverView {
 
