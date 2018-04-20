@@ -35,11 +35,21 @@ public class MedicoBean {
 		return new ArrayList<Medico>();
 	}
 	
-	public void cadastrar(){
+	
+	
+	public String salvar(){
 		FacesMessage msg;
 		try {
-			service.cadastrar(medico);
-			msg = new FacesMessage("Cadastrado com sucesso!");
+			//Verificar se é para cadastrar ou atualizar
+			if(medico.getCodigo()==0) {
+				service.cadastrar(medico);
+				msg = new FacesMessage("Cadastrado com sucesso.");	
+			}else{
+				service.atualizar(medico);
+				msg = new FacesMessage("Atualizado com sucesso.");
+				return "lista_medicos";  //nome do arquivo da página xhtml
+			}
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			msg = new FacesMessage("Erro ao listar");
@@ -47,6 +57,22 @@ public class MedicoBean {
 		
 		//Adiciona a mensagem para a tela
 		FacesContext.getCurrentInstance().addMessage(null, msg);
+		return "medico"; //nome do arquivo da página xhtml
+		
+	}
+	
+	//Método do clique do botão excluir da listagem
+	public void excluir(int codigo) {
+		FacesMessage msg;
+		try {
+			service.remover(codigo);
+			msg = new FacesMessage("Removido com sucesso.");	
+		} catch (Exception e) {
+			e.printStackTrace();
+			msg = new FacesMessage("Erro ao remover.");	
+		}
+		FacesContext.getCurrentInstance().addMessage(null, msg);
+		
 		
 	}
 	
