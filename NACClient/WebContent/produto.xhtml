@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+
+
+<ui:composition template="/_template.xhtml">
+	<ui:define name="conteudo">
+		<h:form>
+			<h:messages />
+			<div>
+				<h:outputLabel value="Nome" for="nome" />
+				<h:inputText value="#{produtoBean.produto.nome}" id="nome" />
+			</div>
+			<div>
+				<h:outputLabel value="Preço" for="preco" />
+				<h:inputText value="#{produtoBean.produto.preco}" id="preco" />
+			</div>
+			<div>
+				<h:selectBooleanCheckbox id="dis"
+					value="#{produtoBean.produto.disponivel}" />
+				<h:outputLabel value="Disponível" for="dis" />
+			</div>
+			<h:commandButton action="#{produtoBean.salvar()}" value="Salvar" />
+		</h:form>
+		
+		<h2>Lista de Produtos</h2>
+		<h:dataTable var="p" value="#{produtoBean.produtos}">
+			<h:column>
+				<f:facet name="header">Código</f:facet>
+				#{p.codigo}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Nome</f:facet>
+				#{p.nome}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Preço</f:facet>
+				#{p.preco}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Disponível</f:facet>
+				#{p.disponivel?"Sim":"Não"}
+			</h:column>
+		</h:dataTable>
+		
+		
+	</ui:define>
+</ui:composition>
+    
+</html>
+
+
+
+
+
